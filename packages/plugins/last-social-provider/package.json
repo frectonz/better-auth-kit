@@ -1,0 +1,33 @@
+{
+	"name": "@better-auth-kit/last-social-provider",
+	"version": "0.0.6",
+	"description": "A plugin for better-auth that stores the last social provider a user used to login.",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ping-maxwell/better-auth-kit"
+	},
+	"exports": {
+		".": {
+			"default": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"scripts": {
+		"dev": "bun build-dev.ts",
+		"build": "bun build.ts"
+	},
+	"keywords": ["better-auth", "social", "social-provider", "plugin"],
+	"author": "frectonz",
+	"license": "MIT",
+	"devDependencies": {
+		"@better-auth-kit/internal-build": "workspace:*"
+	},
+	"peerDependencies": {
+		"better-auth": "1.3"
+	},
+	"dependencies": {},
+	"publishConfig": {
+		"access": "public"
+	}
+}
