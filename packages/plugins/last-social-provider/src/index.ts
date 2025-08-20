@@ -50,7 +50,7 @@ export const lastSocialProvider = (options?: LastSocialProviderOptions) => {
 					const providerId = c.getCookie(opts.cookieName);
 
 					if (!providerId) {
-						throw new APIError("NOT_FOUND");
+						return null;
 					}
 
 					return providerId as SocialProvider;
